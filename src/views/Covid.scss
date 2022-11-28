@@ -1,0 +1,22 @@
+.table-covid {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 14px;
+    color: white;
+    tr {
+        &:nth-child(even) {
+            background-color: #3c3939;
+        }
+        td,
+        th {
+            border: 1px solid #f5eeee;
+            text-align: left;
+            padding: 4px 8px;
+        }
+    }
+}
+h1 {
+    color: white;
+}

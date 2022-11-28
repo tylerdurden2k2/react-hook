@@ -1,13 +1,20 @@
 import "./Nav.scss";
+import { NavLink } from "react-router-dom";
 const Nav = () => {
     return (
-        <div class="topnav">
-            <a class="active" href="#home">
+        <div className="topnav">
+            <NavLink to="/" exact activeClassName="active">
                 Home
-            </a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
+            </NavLink>
+            <NavLink to="/todo" activeClassName="active">
+                Todo
+            </NavLink>
+            <NavLink to="/covid" activeClassName="active">
+                Covid
+            </NavLink>
+            <NavLink to="/blog" activeClassName="active">
+                Blogs
+            </NavLink>
         </div>
     );
 };
